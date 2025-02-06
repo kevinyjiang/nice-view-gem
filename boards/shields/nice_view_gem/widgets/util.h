@@ -32,6 +32,7 @@ struct status_state {
 };
 
 void to_uppercase(char *str);
+void to_lowercase(char *str);
 void rotate_canvas(lv_obj_t *canvas, lv_color_t cbuf[]);
 void fill_background(lv_obj_t *canvas);
 void init_rect_dsc(lv_draw_rect_dsc_t *rect_dsc, lv_color_t bg_color);

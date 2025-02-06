@@ -8,6 +8,12 @@ void to_uppercase(char *str) {
     }
 }
 
+void to_lowercase(char *str) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        str[i] = tolower(str[i]);
+    }
+}
+
 void rotate_canvas(lv_obj_t *canvas, lv_color_t cbuf[]) {
     static lv_color_t cbuf_tmp[BUFFER_SIZE * BUFFER_SIZE];
     memcpy(cbuf_tmp, cbuf, sizeof(cbuf_tmp));

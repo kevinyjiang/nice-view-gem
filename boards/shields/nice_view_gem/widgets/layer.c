@@ -12,7 +12,7 @@ void draw_layer_status(lv_obj_t *canvas, const struct status_state *state) {
         sprintf(text, "Layer %i", state->layer_index);
     } else {
         strcpy(text, state->layer_label);
-        to_uppercase(text);
+        to_lowercase(text);
     }
 
     lv_canvas_draw_text(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, &label_dsc, text);
